@@ -8,6 +8,8 @@ CFLAGS = -Wall -Wextra -Werror
 
 AR = ar rc
 
+ARX = ar x
+
 RM = rm -f
 
 RANLIB = ranlib
@@ -16,9 +18,9 @@ FT_LIB_DIR = ft_lib/
 
 FT_LIB = $(FT_LIB_DIR)ft_lib.a
 
-PRINTF_DIR = printf/
+PRINTF_DIR = ft_printf/
 
-PRINTF = $(PRINTF_DIR)printf.a
+PRINTF = $(PRINTF_DIR)ft_printf.a
 
 GNL_DIR = get_next_line/
 
@@ -36,8 +38,12 @@ $(GNL):
 	make -C $(GNL_DIR)
 
 $(NAME): $(FT_LIB) $(PRINTF) $(GNL)
-	$(AR) $(NAME) $(FT_LIB) $(PRINTF) $(GNL)
+	$(ARX) $(FT_LIB)
+	$(ARX) $(PRINTF)
+	$(ARX) $(GNL)
+	$(AR) $(NAME) *.o
 	$(RANLIB) $(NAME)
+	$(RM) *.o
 
 clean:
 	make clean -C $(FT_LIB_DIR)

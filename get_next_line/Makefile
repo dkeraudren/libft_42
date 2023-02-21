@@ -16,7 +16,7 @@ HEAD=includes/
 
 INCS = $(FT_LIB) $(HEAD)/ft_get_next_line.h
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 AR = ar rc

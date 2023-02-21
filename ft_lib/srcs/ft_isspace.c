@@ -6,16 +6,16 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 18:11:39 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/02/11 18:23:37 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/02/21 18:14:08 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_lib.h"
 
 int	ft_isspace(int c)
 {
 	if (c == '\t' || c == '\n' || c == '\v'
-	|| c == '\f' || c == '\r' || c == ' ')
+		|| c == '\f' || c == '\r' || c == ' ')
 		return (1);
 	return (0);
 }

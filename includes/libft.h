@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/20 21:37:14 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/02/21 18:38:58 by dkeraudr         ###   ########.fr       */
+/*   Created: 2023/02/21 18:26:42 by dkeraudr          #+#    #+#             */
+/*   Updated: 2023/02/21 18:28:35 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef LIBFT_H
+# define LIBFT_H
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-
-# include <stdio.h>
-# include <unistd.h>
-# include <stdlib.h>
-# include <fcntl.h>
-# include <sys/types.h>
-# include <sys/stat.h>
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 42
-# endif
-
-// size_t	ft_strlen(char *s);
-// char	*ft_strchr(char *s, int c);
-// char	*ft_strjoin(char *left_str, char *buff);
-char	*ft_get_line(char *left_str);
-char	*get_next_line(int fd);
+# include "../ft_lib/includes/ft_lib.h"
+# include "../get_next_line/includes/get_next_line.h"
+# include "../ft_printf/includes/ft_printf.h"
 
 #endif

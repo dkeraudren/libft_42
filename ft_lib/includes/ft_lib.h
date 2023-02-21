@@ -6,7 +6,7 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 16:12:49 by dkeraudren        #+#    #+#             */
-/*   Updated: 2023/02/20 21:44:26 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/02/21 18:15:26 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 char	*ft_itoa_base(unsigned long long n, char *base);
 int		ft_putstr(char *s);
 int		ft_putchar(char c);
+int		ft_isspace(int c);
+double	ft_atof(const char *str);
 
 #endif

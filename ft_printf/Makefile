@@ -1,6 +1,6 @@
 # Variables
 
-NAME=printf.a
+NAME=ft_printf.a
 
 FT_LIB_NAME=ft_lib.a
 
@@ -16,7 +16,7 @@ HEAD=includes/
 
 INCS = $(FT_LIB) includes/ft_printf.h
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 AR = ar rc

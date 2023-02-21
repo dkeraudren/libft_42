@@ -6,7 +6,7 @@
 #    By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/13 16:20:43 by dkeraudren        #+#    #+#              #
-#    Updated: 2023/02/21 18:01:53 by dkeraudr         ###   ########.fr        #
+#    Updated: 2023/02/21 19:46:54 by dkeraudr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ HEAD = includes/
 
 INCS = $(HEAD)ft_lib.h
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 AR = ar rc
