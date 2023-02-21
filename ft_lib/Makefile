@@ -6,7 +6,7 @@
 #    By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/13 16:20:43 by dkeraudren        #+#    #+#              #
-#    Updated: 2023/02/20 21:47:07 by dkeraudr         ###   ########.fr        #
+#    Updated: 2023/02/21 18:01:53 by dkeraudr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ ft_memcmp ft_split ft_strncmp ft_isalpha ft_memcpy ft_strchr\
 ft_strnstr ft_isascii ft_memmove ft_strdup ft_strrchr ft_striteri\
 ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast\
 ft_lstadd_back ft_lstdelone ft_lstclear ft_lstiter ft_lstmap\
-ft_putchar ft_putstr ft_itoa_base\
+ft_putchar ft_putstr ft_itoa_base ft_atof ft_isspace\
 
 SRCS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
