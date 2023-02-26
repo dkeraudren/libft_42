@@ -6,7 +6,7 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 21:37:30 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/02/20 21:37:30 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/02/24 22:14:26 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,46 +102,3 @@ char	*get_next_line(int fd)
 	free(tmp);
 	return (line);
 }
-
-// int	main(void)
-// {
-// 	int fd;
-// 	char	*line;
-
-// 	fd = open("test.txt", O_RDONLY);
-
-// 	line = get_next_line(fd); // 1
-// 	printf("%s", line);
-// 	free(line);
-// 	// line = get_next_line(fd); // 2
-// 	// printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd); // 3
-// 	// printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd); // 4
-// 	// printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd); // 5
-// 	// // printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd); // 6
-// 	// // printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd); // 7
-// 	// // printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd); // 8
-// 	// // printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd); // 9
-// 	// // printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd);
-// 	// // printf("%s", line);
-// 	// free(line);
-// 	// line = get_next_line(fd);
-// 	// // printf("%s", line);
-// 	// free(line);
-// 	return (0);
-// }

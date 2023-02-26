@@ -6,13 +6,13 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 17:44:43 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/02/21 18:14:01 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/02/26 11:31:55 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_lib.h"
 
-int	get_decimal(const char *str)
+double	get_decimal(const char *str)
 {
 	double	result;
 	double	decimal;

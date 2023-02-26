@@ -1,5 +1,3 @@
-# take the .o in  the objs folder in ft_lib get_new_line and printf and put it in libft.a
-
 NAME = libft.a
 
 CC = gcc
