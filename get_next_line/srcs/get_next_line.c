@@ -6,7 +6,7 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 21:37:30 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/02/24 22:14:26 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/08 16:22:38 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ char	*ft_read_line(int fd, char *rest_str)
 			return (NULL);
 		}
 		buff[ret] = '\0';
-		rest_str = ft_strjoin(rest_str, buff);
+		rest_str = ft_gnl_strjoin(rest_str, buff);
 	}
 	free(buff);
 	return (rest_str);

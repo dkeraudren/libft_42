@@ -6,7 +6,7 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 21:37:14 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/02/24 22:14:21 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/08 16:27:47 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 #  define BUFFER_SIZE 42
 # endif
 
+char	*ft_gnl_strjoin(char *left_str, char *buff);
 char	*ft_get_line(char *left_str);
 char	*get_next_line(int fd);
 

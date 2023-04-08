@@ -6,72 +6,41 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 21:37:41 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/02/21 18:38:44 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/08 16:21:56 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-// size_t	ft_strlen(char *s)
-// {
-// 	size_t	i;
 
-// 	i = 0;
-// 	if (!s)
-// 		return (0);
-// 	while (s[i])
-// 		i++;
-// 	return (i);
-// }
+char	*ft_gnl_strjoin(char *left_str, char *buff)
+{
+	char	*new_str;
+	size_t	i;
+	size_t	j;
 
-// char	*ft_strchr(char *s, int c)
-// {
-// 	size_t	i;
-
-// 	i = 0;
-// 	if (!s)
-// 		return (NULL);
-// 	if (c == '\0')
-// 		return (s + ft_strlen(s));
-// 	while (s[i])
-// 	{
-// 		if (s[i] == c)
-// 			return (s + i);
-// 		i++;
-// 	}
-// 	if (s[i] == c)
-// 		return (s + i);
-// 	return (NULL);
-// }
-
-// char	*ft_strjoin(char *left_str, char *buff)
-// {
-// 	char	*new_str;
-// 	size_t	i;
-// 	size_t	j;
-
-// 	if (!left_str)
-// 	{
-// 		left_str = malloc(sizeof(char));
-// 		if (!left_str)
-// 			return (NULL);
-// 		left_str[0] = '\0';
-// 	}
-// 	if (!buff)
-// 		return (NULL);
-// 	new_str = malloc(sizeof(char)
-// 			* (ft_strlen(left_str) + ft_strlen(buff) + 1));
-// 	if (!new_str)
-// 		return (NULL);
-// 	i = -1;
-// 	while (left_str[++i])
-// 		new_str[i] = left_str[i];
-// 	j = 0;
-// 	while (buff[j])
-// 		new_str[i++] = buff[j++];
-// 	new_str[ft_strlen(left_str) + ft_strlen(buff)] = '\0';
-// 	return (free(left_str), new_str);
-// }
+	if (!left_str)
+	{
+		left_str = malloc(sizeof(char));
+		if (!left_str)
+			return (NULL);
+		left_str[0] = '\0';
+	}
+	if (!buff)
+		return (NULL);
+	new_str = malloc(sizeof(char)
+			* (ft_strlen(left_str) + ft_strlen(buff) + 1));
+	if (!new_str)
+		return (NULL);
+	i = -1;
+	while (left_str[++i])
+		new_str[i] = left_str[i];
+	j = 0;
+	while (buff[j])
+		new_str[i++] = buff[j++];
+	new_str[ft_strlen(left_str) + ft_strlen(buff)] = '\0';
+	return (free(left_str), new_str);
+}
 
 char	*ft_get_line_bis(char *line, size_t i)
 {

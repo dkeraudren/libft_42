@@ -14,7 +14,7 @@ FT_LIB=$(FT_LIB_DIR)$(FT_LIB_NAME)
 
 HEAD=includes/
 
-INCS = $(FT_LIB) includes/ft_get_next_line.h
+INCS = $(FT_LIB) includes/get_next_line.h
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
@@ -45,7 +45,7 @@ $(OBJ_DIR):
 			mkdir -p $(OBJ_DIR)
 
 main: $(NAME) main.c
-	$(CC) -I$(HEAD) main.c -L. -lftprintf -o main
+	$(CC) -I$(HEAD) main.c -L. -l:gnl.a -o main
 
 bonus: $(NAME)
 
