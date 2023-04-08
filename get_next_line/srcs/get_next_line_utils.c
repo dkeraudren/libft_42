@@ -6,12 +6,11 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 21:37:41 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/04/08 16:21:56 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/08 16:28:59 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
 
 char	*ft_gnl_strjoin(char *left_str, char *buff)
 {
