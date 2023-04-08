@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/11/13 16:20:43 by dkeraudren        #+#    #+#              #
-#    Updated: 2023/02/21 19:46:54 by dkeraudr         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME = ft_lib.a
 
 SRC_DIR = srcs/
@@ -20,7 +8,7 @@ HEAD = includes/
 
 INCS = $(HEAD)ft_lib.h
 
-CC = cc
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 AR = ar rc

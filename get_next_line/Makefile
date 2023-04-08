@@ -14,15 +14,16 @@ FT_LIB=$(FT_LIB_DIR)$(FT_LIB_NAME)
 
 HEAD=includes/
 
-INCS = $(FT_LIB) $(HEAD)/ft_get_next_line.h
+INCS = $(FT_LIB) includes/ft_get_next_line.h
 
-CC = cc
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 AR = ar rc
 RANLIB = ranlib
 
-SRC_FILES = 
+SRC_FILES = get_next_line\
+			get_next_line_utils\
 
 SRCS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))

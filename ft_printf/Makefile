@@ -16,7 +16,7 @@ HEAD=includes/
 
 INCS = $(FT_LIB) includes/ft_printf.h
 
-CC = cc
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 AR = ar rc
