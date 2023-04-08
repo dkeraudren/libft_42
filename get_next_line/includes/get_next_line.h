@@ -19,6 +19,7 @@
 # include <fcntl.h>
 # include <sys/types.h>
 # include <sys/stat.h>
+# include "../../ft_lib/includes/ft_lib.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
