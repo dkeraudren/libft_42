@@ -6,7 +6,7 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/11 17:44:43 by dkeraudr          #+#    #+#             */
-/*   Updated: 2023/02/26 11:31:55 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/10 11:04:53 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,16 @@ double	get_decimal(const char *str)
 	while (decimal >= 1)
 		decimal /= 10;
 	result += decimal;
+	while (ft_isdigit(str[i]))
+		i++;
+	if (str[i] == 'e' || str[i] == 'E')
+	{
+		i++;
+		if (str[i] == '-')
+			result /= ft_pow(10, ft_atoi(str + i + 1));
+		else if (str[i] == '+')
+			result *= ft_pow(10, ft_atoi(str + i + 1));
+	}
 	return (result);
 }
 
