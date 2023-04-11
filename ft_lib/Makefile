@@ -24,7 +24,7 @@ ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast\
 ft_lstadd_back ft_lstdelone ft_lstclear ft_lstiter ft_lstmap\
 ft_putchar ft_putstr ft_itoa_base ft_atof ft_isspace\
 ft_isint ft_isdouble ft_abs ft_pow ft_get_max ft_get_min\
-ft_strtoupper ft_strtolower\
+ft_strtoupper ft_strtolower ft_issign\
 
 SRCS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
