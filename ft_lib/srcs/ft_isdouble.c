@@ -6,13 +6,13 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 10:40:11 by dkeraudren        #+#    #+#             */
-/*   Updated: 2023/04/10 10:43:19 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/13 19:35:24 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_lib.h"
 
-int	ft_isdouble(char *str)
+int	ft_isdouble(const char *str)
 {
 	int	i;
 

@@ -6,7 +6,7 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 16:12:49 by dkeraudren        #+#    #+#             */
-/*   Updated: 2023/04/11 20:14:28 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/13 19:35:05 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ int		ft_isspace(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_isint(const char *str);
-int		ft_isdouble(char *str);
+int		ft_isdouble(const char *str);
+int		ft_isfloat(const char *str);
 int		ft_issign(const char c);
 
 int		ft_atoi(const char *nptr);
