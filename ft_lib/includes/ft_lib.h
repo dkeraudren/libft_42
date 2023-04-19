@@ -6,7 +6,7 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 16:12:49 by dkeraudren        #+#    #+#             */
-/*   Updated: 2023/04/13 19:35:05 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/19 21:19:28 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 int		ft_putstr(char *s);
 int		ft_putchar(char c);
+
+int		ft_error(char *str);
 
 char	**ft_split(char const *s, char c);
 int		ft_count_words(char const *s, char c);
