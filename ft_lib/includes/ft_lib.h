@@ -6,7 +6,7 @@
 /*   By: dkeraudr <dkeraudr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/13 16:12:49 by dkeraudren        #+#    #+#             */
-/*   Updated: 2023/04/19 21:19:28 by dkeraudr         ###   ########.fr       */
+/*   Updated: 2023/04/30 18:28:36 by dkeraudr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,4 +92,6 @@ int		ft_abs(int nb);
 
 int		ft_get_max(int a, int b);
 int		ft_get_min(int a, int b);
+
+int		ft_tablen(char **tab);
 #endif
