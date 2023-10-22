@@ -27,32 +27,34 @@ GNL = $(GNL_DIR)gnl.a
 all: $(NAME)
 
 $(FT_LIB):
-	make -C $(FT_LIB_DIR)
+	@make -C $(FT_LIB_DIR)
 
 $(PRINTF):
-	make -C $(PRINTF_DIR)
+	@make -C $(PRINTF_DIR)
 
 $(GNL):
-	make -C $(GNL_DIR)
+	@make -C $(GNL_DIR)
 
 $(NAME): $(FT_LIB) $(PRINTF) $(GNL)
-	$(ARX) $(FT_LIB)
-	$(ARX) $(PRINTF)
-	$(ARX) $(GNL)
-	$(AR) $(NAME) *.o
-	$(RANLIB) $(NAME)
-	$(RM) *.o
+	@echo "\n\n\033[0;32mCompiling libft..."
+	@$(ARX) $(FT_LIB)
+	@$(ARX) $(PRINTF)
+	@$(ARX) $(GNL)
+	@$(AR) $(NAME) *.o
+	@$(RANLIB) $(NAME)
+	@$(RM) *.o
+	@echo "\033[0m"
 
 clean:
-	make clean -C $(FT_LIB_DIR)
-	make clean -C $(PRINTF_DIR)
-	make clean -C $(GNL_DIR)
+	@make clean -C $(FT_LIB_DIR)
+	@make clean -C $(PRINTF_DIR)
+	@make clean -C $(GNL_DIR)
 
 fclean: clean
 	$(RM) $(NAME)
-	make fclean -C $(FT_LIB_DIR)
-	make fclean -C $(PRINTF_DIR)
-	make fclean -C $(GNL_DIR)
+	@make fclean -C $(FT_LIB_DIR)
+	@make fclean -C $(PRINTF_DIR)
+	@make fclean -C $(GNL_DIR)
 
 re: fclean all
 

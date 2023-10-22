@@ -33,20 +33,23 @@ OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
 all: $(NAME)
 
 $(OBJ_DIR)%.o:	$(SRC_DIR)%.c $(INCS) | $(OBJ_DIR)
-				$(CC) $(CFLAGS) -I$(HEAD) -c $< -o $@
+				@printf "\033[0;33mGenerating ft_lib objects... %-33.33s\r" $@
+				@$(CC) $(CFLAGS) -I$(HEAD) -c $< -o $@
 
 $(OBJ_DIR):
-			mkdir -p $(OBJ_DIR)
+			@mkdir -p $(OBJ_DIR)
 
 $(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
-	ranlib $(NAME)
+	@echo "\n\n\033[0;32mCompiling ft_lib..."
+	@ar rc $(NAME) $(OBJS)
+	@ranlib $(NAME)
+	@echo "\033[0m"
 
 clean:
-	$(RM) $(OBJ_DIR)
+	@$(RM) $(OBJ_DIR)
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 
