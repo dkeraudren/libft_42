@@ -27,7 +27,7 @@ GNL = $(GNL_DIR)gnl.a
 all: $(NAME)
 
 $(FT_LIB):
-	@echo "\033[0;34mCompiling ft_lib..."
+	@echo "\n\n\033[0;34mCompiling ft_lib..."
 	@make -C $(FT_LIB_DIR) --no-print-directory
 
 $(PRINTF):
