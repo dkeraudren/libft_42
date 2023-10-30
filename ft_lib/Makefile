@@ -40,9 +40,9 @@ $(OBJ_DIR):
 			@mkdir -p $(OBJ_DIR)
 
 $(NAME): $(OBJS)
-	@echo "\n\n\033[0;32mCompiling ft_lib..."
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
+	@echo "\n\n\033[0;32mCompiled ft_lib!"
 	@echo "\033[0m"
 
 clean:

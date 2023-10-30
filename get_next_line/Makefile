@@ -31,13 +31,12 @@ OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
 all: $(NAME)
 
 $(FT_LIB):
-	make -C $(FT_LIB_DIR)
+	make -C $(FT_LIB_DIR) --no-print-directory
 
-$(NAME):	$(OBJS)
-			@echo "\n\n\033[0;32mCompiling gnl..."
-			@make all -C $(FT_LIB_DIR)
+$(NAME):	$(OBJS) $(FT_LIB)
 			@$(AR) $(NAME) $? $(FT_LIB_DIR)objs/*.o
 			@$(RANLIB) $(NAME)
+			@echo "\n\n\033[0;32mCompiled gnl!"
 			@echo "\033[0m"
 
 $(OBJ_DIR)%.o:	$(SRC_DIR)%.c $(INCS) | $(OBJ_DIR)
@@ -48,12 +47,12 @@ $(OBJ_DIR):
 			@mkdir -p $(OBJ_DIR)
 
 clean:
-	@make clean -C $(FT_LIB_DIR)
+	@make clean -C $(FT_LIB_DIR) --no-print-directory
 	@$(RM) $(OBJ_DIR)
 
 fclean: clean
 	@$(RM) $(NAME)
-	@make fclean -C $(FT_LIB_DIR)
+	@make fclean -C $(FT_LIB_DIR) --no-print-directory
 
 re: fclean all
 
