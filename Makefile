@@ -46,6 +46,7 @@ $(NAME): $(FT_LIB) $(PRINTF) $(GNL)
 	@$(AR) $(NAME) *.o
 	@$(RANLIB) $(NAME)
 	@$(RM) *.o
+	@$(RM) ft_lib.a
 	@echo "\n\033[0;32mCompiled libft!\033[0m"
 
 clean:
